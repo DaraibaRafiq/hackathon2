@@ -1,53 +1,57 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-white w-full flex flex-wrap justify-evenly items-start px-6 py-8 lg:flex-nowrap lg:justify-evenly lg:px-10 lg:py-16 mr-10'>
+    <footer className="bg-white py-8 border-t border-gray-200 w-full h-full">
+        <div className="container mx-auto px-4 md:px-12">
+           <div className='grid grid-cols-1 md:grid-cols-4 gap-8 border-b-2'>
+              {/* Address Section */}
+              <div className='text-[#9F9F9F] text-sm'>
+                <p>400 University Drive Suite 200</p>
+                <p>Coral Gables,</p>
+                <p> FL 33134 USA</p>
+              </div>
+      
+              {/* Links Section */}
+              <div>
+                <h4 className="text-[#9F9F9F] text-sm font-medium mb-3">Links</h4>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-black hover:text-blue-500">Home</a></li>
+                  <li><a href="#" className="text-black hover:text-blue-500">Shop</a></li>
+                  <li><a href="#" className="text-black hover:text-blue-500">About</a></li>
+                  <li><a href="#" className="text-black hover:text-blue-500">Contact</a></li>
+                </ul>
+              </div> 
+      
+              {/* Help Section */}
+              <div>
+                <h4 className="text-[#9F9F9F] text-sm font-medium mb-3">Help</h4>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-black hover:text-blue-500">Payment Options</a></li>
+                  <li><a href="#" className="text-black hover:text-blue-500">Returns</a></li>
+                  <li><a href="#" className="text-black hover:text-blue-500">Privacy Policies</a></li>
+                </ul>
+              </div>
+              {/*news letter */}
+              <div className='text-sm font-medium mb-3'>
+                <h3 className='text-[#9F9F9F]'>Newsletter</h3>
+                <div className='flex md:gap-6 lg:gap-0 md:flex-col lg:flex-row items-center mt-8'>
+                  <input type= 'email' placeholder='Enter Your Email Address' 
+                  className='flex-1 px-4 py-2 border-b-2 border-black rounded-1-md focus:outline-none focus:ring-1 focus:ring-black' />
+                  <button className='text-black px-4 py-2 rounded-r-md hover:bg-blue-500 border-b-2 outline-none border-black ml-2'>
+                    SUBSCRIBE
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      {/* Brand Section */}
-      <div className='flex flex-col mb-8 lg:mb-0'>
-        <ul className='space-y-1 text-gray-400 text-sm lg:text-base'>
-          <li>400 University Drive</li>
-          <li>200 Coral Gobles,</li>
-          <li>FL 33134 USA</li>
-        </ul>
-      </div>
+            {/* bottom footer */}
+            <div className='mt-8 text-[#9F9F9F]'>
+                <p>2022 Meubel House. All rights reverved</p>
+            </div>
+              </div>
+          </footer>
+        );
+      }
 
-      {/* Links Section */}
-      <div className='mb-8 lg:mb-0'>
-        <h2 className='text-gray-400 mb-2 lg:mb-4 text-sm lg:text-base'>Links</h2>
-        <ul className='space-y-3 text-black text-sm lg:text-base'>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-
-      {/* Help Section */}
-      <div className='mb-8 lg:mb-0'>
-        <h2 className='text-gray-400 mb-2 lg:mb-4 text-sm lg:text-base'>Help</h2>
-        <ul className='space-y-3 text-black text-sm lg:text-base'>
-          <li>Payment Options</li>
-          <li>Returns</li>
-          <li>Privacy Policies</li>
-        </ul>
-      </div>
-
-      {/* Newsletter Section */}
-      <div className='flex flex-col items-start lg:items-center'>
-        <p className='text-gray-400 mb-4 lg:mb-12 text-sm lg:text-base'>Newsletter</p>
-        <div className='flex flex-col items-start lg:flex-row lg:items-center gap-2'>
-          <input 
-            type='email' 
-            placeholder='Enter Your Email Address' 
-            className='text-gray-400 border border-gray-300 p-2 text-sm lg:text-base'
-          />
-          <button className='bg-black text-white px-4 py-2 text-sm lg:text-base'>SUBSCRIBE</button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Footer;
+      export default Footer
