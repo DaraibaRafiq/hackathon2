@@ -1,21 +1,21 @@
-import Header from "@/components/Header";
-import Section1 from "@/components/Section1";
-import Section2 from "@/components/Section2";
-import Section3 from "@/components/Section3";
-import Section4 from "@/components/Section4";
-import Section5 from "@/components/Section5";
-import Section6 from "@/components/Section6";
-
+import HeroSection from "@/components/HeroSection";
+import HeroTwo from "@/components/Herotwo";
+import ShortSec from "@/components/ShortSec";
+import NewArrivals from "@/components/NewArrivals";
+import BlogSection from "@/components/BlogSection"
+import Instasec from "@/components/Instasec"
 export default function Home() {
   return (
     <div>
-      <Header bgColor="skin"/>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
+      <HeroSection />
+      <HeroTwo />
+      <ShortSec
+        title="Top Picks For You"
+        description="find a bright ideal to suit your taste with our great selection of suspension, floor and table lights"
+      />
+      <NewArrivals/>
+      <BlogSection/>
+      <Instasec/>
     </div>
   );
 }
